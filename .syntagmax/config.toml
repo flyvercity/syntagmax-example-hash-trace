@@ -1,0 +1,32 @@
+base = ".."
+
+[[input]]
+name = "system-requirements"
+dir = "SYS"
+driver = "obsidian"
+atype = "SYS"
+
+[[input]]
+name = "system-diagrams"
+dir = "SYS"
+driver = "sidecar"
+atype = "SYS"
+filter = "**/*.png"
+
+[[input]]
+name = "software-requirements"
+dir = "REQ"
+driver = "obsidian"
+atype = "REQ"
+
+[metrics]
+enabled = false
+
+[impact]
+enabled = true
+output_format = "markdown"
+output_file = "console"
+
+[metamodel]
+filename = "project.syntagmax"
+
